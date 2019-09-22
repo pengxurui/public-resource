@@ -1,1 +1,10 @@
-
+<templateSet group="EventBus">
+  <template name="sub" value="@org.greenrobot.eventbus.Subscribe(threadMode = org.greenrobot.eventbus.ThreadMode$thread_mode$)&#10;public void $method_name$($event_name$ event){&#10;    $END$&#10;}" description="Create a method with @Subscribe()" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="thread_mode" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="event_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+</templateSet>
